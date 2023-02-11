@@ -3,10 +3,12 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes}  from 'react-router-dom'; 
 import About from './components/pages/About';
 import NotFound from './components/pages/NotFound';
+import Navbar from './components/layout/Navbar';
 function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Routes>
           {/* <Route exact path="/" elnt={<Home/>} /> */}
           <Route exact path="/about" element={<About/>} /> 
